@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using Blazored.Modal.Services;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using ProductLine.Entities;
 using ProductLine.Repositories;
@@ -15,6 +16,8 @@ namespace ProductLine.Pages
         public string Id { get; set; }
         [Inject]
         public IUnitOfWork UnitOfWork { get; set; }
+        [Inject]
+        public IModalService ModalService { get; set; }
         protected Product Product { get; set; } = new Product();
         protected string photoPath;
         protected EventCallback<string> OnMouseOver { get; set; }
@@ -31,5 +34,12 @@ namespace ProductLine.Pages
         {
             photoPath = photoUrl;
         }
+
+
+        protected void ShowProductList()
+        {
+            ModalService.Show<ProductList>("Product list");
+        }
+        
     }
 }

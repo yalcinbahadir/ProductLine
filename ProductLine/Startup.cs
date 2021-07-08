@@ -17,6 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Blazored.Modal;
 
 namespace ProductLine
 {
@@ -43,6 +44,7 @@ namespace ProductLine
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IFileUpload, FileUpload>();
             services.AddTransient<PageManager<Product>>();
+            services.AddBlazoredModal(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using Blazored.Modal.Services;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using ProductLine.Entities;
 using ProductLine.Infrastructure;
@@ -36,7 +37,16 @@ namespace ProductLine.Pages
             SetPage(index);
         }
 
+        protected void SetPage(int index = 1)
+        {
+            PageManager.Collection = SelectedProducts;
+            TotalProducts = (int)PageManager.TotalItems;
+            PageProducts = PageManager.PageCollection(index).ToList();
+            TotalPages = PageManager.TotalPages;
+            ProductsPerPage = PageManager.ItemPerPage;
+        }
 
+        #region Order
 
         protected void OrderByRefNumber()
         {           
@@ -102,8 +112,9 @@ namespace ProductLine.Pages
             index = 1;
             SetPage(index);
         }
-   
-       protected void SearchByRefNumber(ChangeEventArgs e)
+        #endregion
+        #region Search
+        protected void SearchByRefNumber(ChangeEventArgs e)
        {
             string val = (string)e.Value;
             SelectedProducts=UnitOfWork.ProductRepo.GetByRefNumber(val).ToList();
@@ -138,16 +149,8 @@ namespace ProductLine.Pages
             index = 1;
             SetPage(index);
         }
-       
-        protected void SetPage(int index=1)
-        {
-            PageManager.Collection = SelectedProducts;
-            TotalProducts = (int)PageManager.TotalItems;
-            PageProducts = PageManager.PageCollection(index).ToList();
-            TotalPages = PageManager.TotalPages;
-            ProductsPerPage = PageManager.ItemPerPage;
-        }
-
+        #endregion
+        #region Pagination
         protected void NavigateDown()
         {
             index--;
@@ -166,8 +169,8 @@ namespace ProductLine.Pages
             }
             SetPage(index);
         }
-
-
+        #endregion
+        #region ExportAsCSV
         protected void ExportPage()
         {
             CSVExporter.Products = PageProducts.ToList();
@@ -179,5 +182,16 @@ namespace ProductLine.Pages
             CSVExporter.Products = SelectedProducts.ToList();
             CSVExporter.Export();
         }
+
+        #endregion
+     
+        [Inject]
+        public IModalService ModalService { get; set; }
+        protected void ShowInModal()
+        {
+            ModalService.Show<ProductList>("Product list");
+        }
+
+
     }
 }
