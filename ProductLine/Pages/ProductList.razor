@@ -1,0 +1,63 @@
+﻿@page "/productlist"
+@inherits ProductListBase
+
+@if (SelectedProducts == null)
+{
+    <p><em>Loading ...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"><input type="text" placeholder="Search by refnumber"  class="form-control" @oninput="SearchByRefNumber" /></th>
+                <th scope="col"><input type="text" placeholder="Search by name" class="form-control" @oninput="SearchByName"  /></th>
+                <th scope="col"></th>
+                <th scope="col"><input type="text" placeholder="Search by description" class="form-control" @oninput="SearchByDescription"/></th>
+                <th scope="col"><input type="text" placeholder="Search by AssemblyNr" class="form-control" @oninput="SearchByAssemblyNr" /></th>
+                <th scope="col"><input type="text" placeholder="Search by Category" class="form-control" @oninput="SearchByCategory"  /></th>
+            </tr>
+            <tr>
+                <th scope="col">RefNumber <span class="oi oi-sort-ascending" @onclick="OrderByRefNumber"></span></th>
+                <th scope="col">Name <span class="oi oi-sort-ascending" @onclick="OrderByName"></span></th>
+                <th scope="col">CretaedAt <span class="oi oi-sort-ascending"></span></th>
+                <th scope="col">Description <span class="oi oi-sort-ascending"></span></th>
+                <th scope="col">AssemblyNr <span class="oi oi-sort-ascending" @onclick="OrderByAssemblyNr"></span></th>
+                <th scope="col">Category <span class="oi oi-sort-ascending" @onclick="OrderByCategory"></span></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in PageProducts)
+            {
+            <tr>
+                <th scope="row">@product.RefNumber</th>
+                <td>@product.Name</td>
+                <td>@product.CretaedAt</td>
+                <td>@product.Description</td>
+                <td>@product.AssemblyNr</td>
+                <td>@product.Category.CategoryName</td>
+                <td> <a href="@($"productdetails/{product.Id}")">Details</a></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        @if (TotalProducts > ProductsPerPage)
+        {
+            <span>TotalProducts : @TotalProducts</span>
+            <span>Products per page @ProductsPerPage</span>
+            <span>TotalPages : @TotalPages</span>
+            <span>CurrentPage : @index</span>
+            <button class="btn btn-sm btn-outline-primary m-1"> <span>First</span></button>
+            <button class="btn btn-sm btn-outline-primary m-1" @onclick="NavigateUp"><span> Up</span></button>
+            <button class="btn btn-sm btn-outline-primary m-1" @onclick="NavigateDown"> <span>Down</span></button>
+            <button class="btn btn-sm btn-outline-primary m-1"> <span> Last</span></button>
+        }
+    </div>
+}
+
+<div>
+    <button class="btn btn-outline-success" type="button" @onclick="ExportPage">Export page</button>
+    <button class="btn btn-outline-success" type="button" @onclick="ExportAll">Export all</button>
+</div>
