@@ -42,13 +42,19 @@ namespace ProductLine.Pages
             }                       
         }
 
-        protected async Task GetPhotoPath(string newPath)
+        protected void GetPhotoPath(string newPath)
         {
             NewPhotoPath = newPath;
-            var photo=await UnitOfWork.PhotoRepo.AddAsync(new Photo { ProductId=Model.Id, Url=NewPhotoPath });
-            
-            Model.Photos.Add(photo);
-       
+            //var photo=await UnitOfWork.PhotoRepo.AddAsync(new Photo { ProductId=Model.Id, Url=NewPhotoPath });           
+            //Model.Photos.Add(photo);
+            //new Photo { ProductId=Model.Id, Url=NewPhotoPath }
+            Model.Photos.Add(new Photo { ProductId = Model.Id, Url = NewPhotoPath });
+        }
+
+        protected void DeletePhoto(Photo photo)
+        {
+            //UnitOfWork.PhotoRepo.Delete(photo.Id);
+            Model.Photos.Remove(photo);
         }
 
         protected void HandelValidSubmit()

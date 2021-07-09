@@ -35,7 +35,13 @@ namespace ProductLine.Repositories.Concrete
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var photo = _context.Photos.FirstOrDefault(p => p.Id == id);
+            if(photo != null)
+            {
+                 _context.Photos.Remove(photo);               
+            }
+
+            return _context.SaveChanges() > 0;
         }
 
         public IEnumerable<Photo> GetAll()

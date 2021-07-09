@@ -108,8 +108,20 @@
                     </InputSelect>
                     <ValidationMessage For="@(()=>Model.Land)" />
                 </div>
+                <div class="row justify-content-start">
+                    @foreach (var photo in Model.Photos)
+                    {
+                      <div class="d-flex  flex-column justify-content-center">
+                          <div>
+                              <img img src="images/@photo.Url" alt="Alternate Text" class="smallPhoto m-2" />
+                          </div>
+                          
+                          <button class="btn btn-danger align-self-center" type="button" @onclick="e=>DeletePhoto(photo)">Delete</button>
+                      </div>
+                    }
+                </div>
                 <div>
-                    <button class="btn btn-block btn-outline-primary" type="button" @onclick="@(()=>ShowUploadModule=!ShowUploadModule)">Upload photo</button>
+                    <button class="btn btn-block btn-outline-primary my-2" type="button" @onclick="@(()=>ShowUploadModule=!ShowUploadModule)">Upload photo</button>
                     @if (ShowUploadModule)
                     {
                         <div>
