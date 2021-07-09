@@ -27,7 +27,7 @@ namespace ProductLine.Data
         {
             base.OnModelCreating(modelBuilder);
             //Categories
-            modelBuilder.Entity<Category>().HasData(new Category { Id=1, CategoryName="ACategory" });
+            modelBuilder.Entity<Category>().HasData(new Category { Id= 1, CategoryName="ACategory" });
             modelBuilder.Entity<Category>().HasData(new Category { Id = 2, CategoryName = "BCategory" });
             modelBuilder.Entity<Category>().HasData(new Category { Id = 3, CategoryName = "CCategory" });
 

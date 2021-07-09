@@ -42,6 +42,7 @@ namespace ProductLine
             services.AddSingleton<WeatherForecastService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IFileUpload, FileUpload>();
             services.AddTransient<PageManager<Product>>();
             services.AddBlazoredModal(); 

@@ -1,4 +1,5 @@
-﻿using Blazored.Modal.Services;
+﻿using Blazored.Modal;
+using Blazored.Modal.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using ProductLine.Entities;
@@ -21,6 +22,9 @@ namespace ProductLine.Pages
         public PageManager<Product> PageManager { get; set; } 
         [Inject]
         public IUnitOfWork UnitOfWork { get; set; }
+        [Inject]
+        public IModalService ModalService { get; set; }
+
         protected bool isOrderedByRefNumber = false;
         protected bool isOrderedByName = false;
         protected bool isOrderedByAssemblyNr = false;
@@ -185,13 +189,23 @@ namespace ProductLine.Pages
 
         #endregion
      
-        [Inject]
-        public IModalService ModalService { get; set; }
+
         protected void ShowInModal()
         {
             ModalService.Show<ProductList>("Product list");
         }
 
-
+        //CreateViaModal
+        protected void CreateViaModal()
+        {
+           // ModalService.Show<ProductCreate>("Product create");
+            ModalService.Show<ProductCreate>("Product create",new Blazored.Modal.ModalOptions 
+                                                                {   ContentScrollable=true, 
+                                                                    DisableBackgroundCancel=true, 
+                                                                    HideCloseButton=false, 
+                                                                    Position= Blazored.Modal.ModalPosition.TopLeft, 
+                                                                    UseCustomLayout= false
+                                                                });
+        }
     }
 }

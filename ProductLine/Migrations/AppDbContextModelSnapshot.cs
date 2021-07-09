@@ -77,630 +77,630 @@ namespace ProductLine.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(5691),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(8942),
                             ProductId = 1,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(6960),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(9949),
                             ProductId = 1,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(6993),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(9984),
                             ProductId = 1,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7012),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(3),
                             ProductId = 1,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7029),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(20),
                             ProductId = 1,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7049),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(41),
                             ProductId = 2,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7066),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(59),
                             ProductId = 2,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7083),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(76),
                             ProductId = 2,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7099),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(93),
                             ProductId = 2,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7117),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(111),
                             ProductId = 2,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 101,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7133),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(129),
                             ProductId = 3,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 102,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7149),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(146),
                             ProductId = 3,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 103,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7198),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(163),
                             ProductId = 3,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 104,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7215),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(181),
                             ProductId = 3,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 105,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7231),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(198),
                             ProductId = 3,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7246),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(247),
                             ProductId = 4,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7262),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(268),
                             ProductId = 4,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7279),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(287),
                             ProductId = 4,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7295),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(304),
                             ProductId = 4,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7312),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(321),
                             ProductId = 4,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7328),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(339),
                             ProductId = 5,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7343),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(356),
                             ProductId = 5,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7359),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(374),
                             ProductId = 5,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7375),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(391),
                             ProductId = 5,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7391),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(408),
                             ProductId = 5,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7408),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(425),
                             ProductId = 6,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7423),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(443),
                             ProductId = 6,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7439),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(460),
                             ProductId = 6,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7454),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(478),
                             ProductId = 6,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7470),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(496),
                             ProductId = 6,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 26,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7485),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(513),
                             ProductId = 7,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 27,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7501),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(530),
                             ProductId = 7,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 28,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7541),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(548),
                             ProductId = 7,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 29,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7561),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(567),
                             ProductId = 7,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 30,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7577),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(608),
                             ProductId = 7,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 31,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7593),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(628),
                             ProductId = 8,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 32,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7609),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(646),
                             ProductId = 8,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 33,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7625),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(663),
                             ProductId = 8,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 34,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7641),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(681),
                             ProductId = 8,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 35,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7658),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(698),
                             ProductId = 8,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 36,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7673),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(715),
                             ProductId = 9,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 37,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7688),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(733),
                             ProductId = 9,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 38,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7704),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(750),
                             ProductId = 9,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 39,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7720),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(768),
                             ProductId = 9,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 40,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7736),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(786),
                             ProductId = 9,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 41,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7751),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(804),
                             ProductId = 10,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 42,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7766),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(821),
                             ProductId = 10,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 43,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7782),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(839),
                             ProductId = 10,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 44,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7798),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(856),
                             ProductId = 10,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 45,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7814),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(874),
                             ProductId = 10,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 46,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7831),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(892),
                             ProductId = 11,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 47,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7846),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(908),
                             ProductId = 11,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 48,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7903),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(926),
                             ProductId = 11,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 49,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7922),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(943),
                             ProductId = 11,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 50,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7938),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(960),
                             ProductId = 11,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 51,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7954),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(977),
                             ProductId = 12,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 52,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7970),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1019),
                             ProductId = 12,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 53,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(7986),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1038),
                             ProductId = 12,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 54,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8002),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1055),
                             ProductId = 12,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 55,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8018),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1071),
                             ProductId = 12,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 56,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8034),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1089),
                             ProductId = 13,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 57,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8050),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1106),
                             ProductId = 13,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 58,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8066),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1123),
                             ProductId = 13,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 59,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8083),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1140),
                             ProductId = 13,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 60,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8099),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1157),
                             ProductId = 13,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 61,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8117),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1176),
                             ProductId = 14,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 62,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8133),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1193),
                             ProductId = 14,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 63,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8150),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1210),
                             ProductId = 14,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 64,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8166),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1227),
                             ProductId = 14,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 65,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8182),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1244),
                             ProductId = 14,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 66,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8198),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1262),
                             ProductId = 15,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 67,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8241),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1279),
                             ProductId = 15,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 68,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8257),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1296),
                             ProductId = 15,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 69,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8273),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1314),
                             ProductId = 15,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 70,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8289),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1353),
                             ProductId = 15,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 71,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8305),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1373),
                             ProductId = 16,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 72,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8321),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1408),
                             ProductId = 16,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 73,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8337),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1427),
                             ProductId = 16,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 74,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8352),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1444),
                             ProductId = 16,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 75,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8368),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1462),
                             ProductId = 16,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 76,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8384),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1478),
                             ProductId = 17,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 77,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8401),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1496),
                             ProductId = 17,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 78,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8417),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1512),
                             ProductId = 17,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 79,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8448),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1558),
                             ProductId = 17,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 80,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8464),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1576),
                             ProductId = 17,
                             Url = "demo5.jpg"
                         },
                         new
                         {
                             Id = 81,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8479),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1593),
                             ProductId = 18,
                             Url = "demo1.jpg"
                         },
                         new
                         {
                             Id = 82,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8495),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1610),
                             ProductId = 18,
                             Url = "demo2.jfif"
                         },
                         new
                         {
                             Id = 83,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8511),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1627),
                             ProductId = 18,
                             Url = "demo3.jfif"
                         },
                         new
                         {
                             Id = 84,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8527),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1644),
                             ProductId = 18,
                             Url = "demo4.jpg"
                         },
                         new
                         {
                             Id = 85,
-                            CreatedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(8542),
+                            CreatedAt = new DateTime(2021, 7, 8, 21, 56, 5, 790, DateTimeKind.Local).AddTicks(1661),
                             ProductId = 18,
                             Url = "demo5.jpg"
                         });
@@ -725,10 +725,22 @@ namespace ProductLine.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsControlled")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("Land")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Market")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RefNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Target")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -743,8 +755,9 @@ namespace ProductLine.Migrations
                             Id = 1,
                             AssemblyNr = "A12",
                             CategoryId = 1,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 227, DateTimeKind.Local).AddTicks(2287),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 787, DateTimeKind.Local).AddTicks(5791),
                             Description = "Description of brake-1",
+                            IsControlled = false,
                             Name = "Brake-1",
                             RefNumber = "ABC123"
                         },
@@ -753,8 +766,9 @@ namespace ProductLine.Migrations
                             Id = 2,
                             AssemblyNr = "A13",
                             CategoryId = 1,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(3945),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7619),
                             Description = "Description of brake-2",
+                            IsControlled = false,
                             Name = "Brake-2",
                             RefNumber = "ABC124"
                         },
@@ -763,8 +777,9 @@ namespace ProductLine.Migrations
                             Id = 3,
                             AssemblyNr = "A14",
                             CategoryId = 1,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4000),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7690),
                             Description = "Description of brake-3",
+                            IsControlled = false,
                             Name = "Brake-3",
                             RefNumber = "ABC125"
                         },
@@ -773,8 +788,9 @@ namespace ProductLine.Migrations
                             Id = 4,
                             AssemblyNr = "A15",
                             CategoryId = 2,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4023),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7718),
                             Description = "Description of Steer-1",
+                            IsControlled = false,
                             Name = "Steer-1",
                             RefNumber = "ABC126"
                         },
@@ -783,8 +799,9 @@ namespace ProductLine.Migrations
                             Id = 5,
                             AssemblyNr = "A16",
                             CategoryId = 2,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4041),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7740),
                             Description = "Description of Steer--2",
+                            IsControlled = false,
                             Name = "Steer-2",
                             RefNumber = "ABC127"
                         },
@@ -793,8 +810,9 @@ namespace ProductLine.Migrations
                             Id = 6,
                             AssemblyNr = "A17",
                             CategoryId = 2,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4064),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7765),
                             Description = "Description of Steer-3",
+                            IsControlled = false,
                             Name = "Steer-3",
                             RefNumber = "ABC128"
                         },
@@ -803,8 +821,9 @@ namespace ProductLine.Migrations
                             Id = 7,
                             AssemblyNr = "A18",
                             CategoryId = 3,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4082),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7786),
                             Description = "Description of Filter-1",
+                            IsControlled = false,
                             Name = "Filter-1",
                             RefNumber = "ABC226"
                         },
@@ -813,8 +832,9 @@ namespace ProductLine.Migrations
                             Id = 8,
                             AssemblyNr = "A19",
                             CategoryId = 3,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4099),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7806),
                             Description = "Description of Filter--2",
+                            IsControlled = false,
                             Name = "Filter-2",
                             RefNumber = "ABC227"
                         },
@@ -823,8 +843,9 @@ namespace ProductLine.Migrations
                             Id = 9,
                             AssemblyNr = "A10",
                             CategoryId = 3,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4115),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7827),
                             Description = "Description of Filter-3",
+                            IsControlled = false,
                             Name = "Filter-3",
                             RefNumber = "ABC228"
                         },
@@ -833,8 +854,9 @@ namespace ProductLine.Migrations
                             Id = 10,
                             AssemblyNr = "A12",
                             CategoryId = 1,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4134),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7848),
                             Description = "Description of brake-11",
+                            IsControlled = false,
                             Name = "Brake-11",
                             RefNumber = "ABd123"
                         },
@@ -843,8 +865,9 @@ namespace ProductLine.Migrations
                             Id = 11,
                             AssemblyNr = "A13",
                             CategoryId = 1,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4151),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7869),
                             Description = "Description of brake-21",
+                            IsControlled = false,
                             Name = "Brake-21",
                             RefNumber = "ABD124"
                         },
@@ -853,8 +876,9 @@ namespace ProductLine.Migrations
                             Id = 12,
                             AssemblyNr = "A14",
                             CategoryId = 1,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4277),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7889),
                             Description = "Description of brake-31",
+                            IsControlled = false,
                             Name = "Brake-31",
                             RefNumber = "ABZ125"
                         },
@@ -863,8 +887,9 @@ namespace ProductLine.Migrations
                             Id = 13,
                             AssemblyNr = "A15",
                             CategoryId = 2,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4297),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7909),
                             Description = "Description of Steer-11",
+                            IsControlled = false,
                             Name = "Steer-11",
                             RefNumber = "ABS126"
                         },
@@ -873,8 +898,9 @@ namespace ProductLine.Migrations
                             Id = 14,
                             AssemblyNr = "A16",
                             CategoryId = 2,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4314),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7930),
                             Description = "Description of Steer--21",
+                            IsControlled = false,
                             Name = "Steer-21",
                             RefNumber = "ABE127"
                         },
@@ -883,8 +909,9 @@ namespace ProductLine.Migrations
                             Id = 15,
                             AssemblyNr = "A17",
                             CategoryId = 2,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4331),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7950),
                             Description = "Description of Steer-31",
+                            IsControlled = false,
                             Name = "Steer-31",
                             RefNumber = "ABA128"
                         },
@@ -893,8 +920,9 @@ namespace ProductLine.Migrations
                             Id = 16,
                             AssemblyNr = "A18",
                             CategoryId = 3,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4348),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(7996),
                             Description = "Description of Filter-11",
+                            IsControlled = false,
                             Name = "Filter-11",
                             RefNumber = "ABK226"
                         },
@@ -903,8 +931,9 @@ namespace ProductLine.Migrations
                             Id = 17,
                             AssemblyNr = "A19",
                             CategoryId = 3,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4366),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(8018),
                             Description = "Description of Filter--21",
+                            IsControlled = false,
                             Name = "Filter-21",
                             RefNumber = "ABM227"
                         },
@@ -913,8 +942,9 @@ namespace ProductLine.Migrations
                             Id = 18,
                             AssemblyNr = "A10",
                             CategoryId = 3,
-                            CretaedAt = new DateTime(2021, 7, 6, 17, 23, 52, 229, DateTimeKind.Local).AddTicks(4384),
+                            CretaedAt = new DateTime(2021, 7, 8, 21, 56, 5, 789, DateTimeKind.Local).AddTicks(8039),
                             Description = "Description of Filter-31",
+                            IsControlled = false,
                             Name = "Filter-31",
                             RefNumber = "ABH228"
                         });
@@ -923,7 +953,7 @@ namespace ProductLine.Migrations
             modelBuilder.Entity("ProductLine.Entities.Photo", b =>
                 {
                     b.HasOne("ProductLine.Entities.Product", "Product")
-                        .WithMany("Photos")
+                        .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -945,11 +975,6 @@ namespace ProductLine.Migrations
             modelBuilder.Entity("ProductLine.Entities.Category", b =>
                 {
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("ProductLine.Entities.Product", b =>
-                {
-                    b.Navigation("Photos");
                 });
 #pragma warning restore 612, 618
         }

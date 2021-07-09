@@ -1,0 +1,111 @@
+﻿@page "/productcreate"
+@inherits ProductCreateBase
+@using Microsoft.AspNetCore.Components.Forms
+<div class="container">
+    <div class="card w-75">
+        <div class="card-header">
+            Create a new product
+        </div>
+        <div class="card-body ">
+            <EditForm Model="@Model" OnValidSubmit="HandelValidSubmit">
+                <DataAnnotationsValidator></DataAnnotationsValidator>
+                <ValidationSummary></ValidationSummary>
+
+                <div class="form-group row">
+                    <label for="refNumber" class="col-4">Reference number</label>
+                    <InputText @bind-Value="Model.RefNumber" class="form-control col-8" id="refNumber" />
+                    <ValidationMessage For="@(()=>Model.RefNumber)" />
+                </div>
+                <div class="form-group row">
+                    <label for="pName" class="col-4">Name</label>
+                    <InputText @bind-Value="Model.Name" class="form-control col-8" id="pName" />
+                    <ValidationMessage For="@(()=>Model.Name)" />
+                </div>
+                <div class="form-group row">
+                    <label for="cretaedAt" class="col-4">CretaedAt</label>
+                    <InputDate @bind-Value="Model.CretaedAt" class="form-control col-8" id="cretaedAt" />
+                    <ValidationMessage For="@(()=>Model.CretaedAt)" />
+                </div>
+                <div class="form-group row">
+                    <label for="description" class="col-4">Description</label>
+                    <InputTextArea @bind-Value="Model.Description" class="form-control col-8" id="description" />
+                    <ValidationMessage For="@(()=>Model.Description)" />
+                </div>
+                <div class="form-group row">
+                    <label for="assemblyNr" class="col-4">Assembly number</label>
+                    <InputText @bind-Value="Model.AssemblyNr" class="form-control col-8" id="assemblyNr" />
+                    <ValidationMessage For="@(()=>Model.AssemblyNr)" />
+                </div>
+                <div class="form-group row">
+                    <label for="category" class="col-4">Category</label>
+                    <InputSelect @bind-Value="Model.CategoryId" class="form-control col-8" id="category">
+                        <option readonly hidden selected>-- Select category</option>
+                        @foreach (var category in Categories)
+                        {
+                            <option value="@category.Id">@category.CategoryName</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="@(()=>Model.CategoryId)" />
+                </div>
+                <div class="form-group row">
+                    <label for="isControlled" class="col-4">IsControlled</label>
+                    <div class="col-1">
+                        <InputCheckbox @bind-Value="Model.IsControlled" class="form-check-input" id="isControlled" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="isApproved" class="col-4">Target</label>
+                    <div>
+                        <div class="form-check">
+                            <input type="radio" name="target" value="In" class="form-check-input" />
+                            <label class="form-check-label">
+                                In
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="target" value="Out" class="form-check-input" checked />
+                            <label class="form-check-label">
+                                Out
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <InputRadioGroup type="radio" name="target" value="Both" @bind="@Model.Target" class="form-check-input" />
+                            <label class="form-check-label">
+                                Both
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="isApproved" class="col-4">Market</label>
+                    <div>
+                        @foreach (var market in Enum.GetValues(typeof(Market)))
+                        {
+                            <div class="form-check">
+                                <input type="radio" name="market" value="@market" id="market-@market" class="form-check-input" />
+                                <label class="form-check-label">
+                                    @market
+                                </label>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="land" class="col-4 ">Land</label>
+                    <InputSelect @bind-Value="Model.Land" class="form-control col-8" id="land">
+                        <option readonly hidden selected>-- Select land</option>
+                        @foreach (var land in Enum.GetValues(typeof(Land)))
+                        {
+                            <option value="@land">@land</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="@(()=>Model.Land)" />
+                </div>
+                <button class="btn btn-block btn-outline-primary">Save</button>
+            </EditForm>
+        </div>
+    </div>
+</div>
