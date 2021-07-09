@@ -45,14 +45,8 @@ namespace ProductLine.Pages
             product.Description = model.Description;
             product.AssemblyNr = model.AssemblyNr;
             product.CategoryId = int.TryParse(model.CategoryId, out int id) ? id : 1;
-
-            //if (int.TryParse(Model.CategoryId, out int id))
-            //{
-            //    product.CategoryId = id;
-            //}
-
             product.IsControlled = model.IsControlled;
-            product.Target = model.Target;
+            product.Target = model.Target.ToString();
             product.Land = model.Land;
             product.Market = model.Market;
             product.Photos = new List<Photo>() { new Photo() { Url="part.jpg" } };

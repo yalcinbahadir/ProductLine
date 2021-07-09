@@ -20,8 +20,11 @@ namespace ProductLine.Models
         [Required]
         public string CategoryId { get; set; }
         public bool IsControlled { get; set; }
-        public string Target { get; set; }
+        [Required]
+        public Target? Target { get; set; }
+        [Required]
         public Land? Land { get; set; }
+        [Required]
         public Market? Market { get; set; }
     }
 }

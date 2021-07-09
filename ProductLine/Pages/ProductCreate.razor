@@ -53,45 +53,58 @@
                         <InputCheckbox @bind-Value="Model.IsControlled" class="form-check-input" id="isControlled" />
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="isApproved" class="col-4">Target</label>
-                    <div>
-                        <div class="form-check">
-                            <input type="radio" name="target" value="In" class="form-check-input" />
-                            <label class="form-check-label">
-                                In
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="target" value="Out" class="form-check-input" checked />
-                            <label class="form-check-label">
-                                Out
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <InputRadioGroup type="radio" name="target" value="Both" @bind="@Model.Target" class="form-check-input" />
-                            <label class="form-check-label">
-                                Both
-                            </label>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="form-group row">
-                    <label for="isApproved" class="col-4">Market</label>
+                    <label for="target" class="col-4">Target</label>
                     <div>
-                        @foreach (var market in Enum.GetValues(typeof(Market)))
-                        {
-                            <div class="form-check">
-                                <input type="radio" name="market" value="@market" id="market-@market" class="form-check-input" />
-                                <label class="form-check-label">
-                                    @market
-                                </label>
+                        <InputRadioGroup @bind-Value="Model.Target">
+
+                            <div class="p-2 d-flex">
+                                @foreach (var target in Enum.GetValues(typeof(Target)))
+                                {
+
+                                    <div class="mr-2">
+                                        <InputRadio Value="@target" class="mr-1 border-0" />
+                                        <span class="mr-2">@target</span>
+                                    </div>
+
+                                }
                             </div>
-                        }
+                            <ValidationMessage For="@(()=>Model.Target)" />
+                        </InputRadioGroup>
 
                     </div>
                 </div>
+
+                <div class="form-group row">
+                    <label for="target" class="col-4">Market</label>
+                    <div>
+                        <InputRadioGroup @bind-Value="Model.Market">
+
+                            <div class="p-2 d-flex">
+                                @foreach (var market in Enum.GetValues(typeof(Market)))
+                                {
+
+                                    <div class="mr-2">
+                                        <InputRadio Value="@market" class="mr-1 border-0" />
+                                        <span class="mr-2">@market</span>
+                                    </div>
+
+                                }
+                            </div>
+                            <ValidationMessage For="@(()=>Model.Market)" />
+                        </InputRadioGroup>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
 
                 <div class="form-group row">
                     <label for="land" class="col-4 ">Land</label>
