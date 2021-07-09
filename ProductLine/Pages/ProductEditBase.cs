@@ -16,14 +16,14 @@ namespace ProductLine.Pages
         [Parameter]
         public string Id { get; set; }
         public List<Category> Categories { get; set; } = new List<Category>();
-        //[Inject]
-        //public ICategoryRepository CategoryRepository { get; set; }
-        //[Inject]
-        //public IProductRepository ProductRepository { get; set; }
         [Inject]
         public IUnitOfWork UnitOfWork { get; set; }
         [Inject]
         public NavigationManager NavigationManager { get; set; }
+
+        public bool ShowUploadModule { get; set; }
+        public string NewPhotoPath { get; set; }
+
         protected override void OnInitialized()
         {
             Categories = UnitOfWork.CategoryRepo.GetAll().ToList();
@@ -42,12 +42,21 @@ namespace ProductLine.Pages
             }                       
         }
 
+        protected async Task GetPhotoPath(string newPath)
+        {
+            NewPhotoPath = newPath;
+            var photo=await UnitOfWork.PhotoRepo.AddAsync(new Photo { ProductId=Model.Id, Url=NewPhotoPath });
+            
+            Model.Photos.Add(photo);
+       
+        }
+
         protected void HandelValidSubmit()
         {
             var product = UnitOfWork.ProductRepo.GetById(Model.Id);
             MapModelToProduct(Model, product);
             UnitOfWork.ProductRepo.SaveChanges();
-            NavigationManager.NavigateTo("/productlist");
+            NavigationManager.NavigateTo("/productlist",true);
         }
 
 

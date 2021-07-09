@@ -43,6 +43,7 @@ namespace ProductLine
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IPhotoRepository, PhotoRepository>();
             services.AddScoped<IFileUpload, FileUpload>();
             services.AddTransient<PageManager<Product>>();
             services.AddBlazoredModal(); 

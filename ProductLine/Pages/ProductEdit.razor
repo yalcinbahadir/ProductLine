@@ -10,7 +10,7 @@
             <EditForm Model="@Model" OnValidSubmit="HandelValidSubmit">
                 <DataAnnotationsValidator></DataAnnotationsValidator>
                 <ValidationSummary></ValidationSummary>
-                <InputNumber @bind-Value="Model.Id" class="invisible"/>
+                <InputNumber @bind-Value="Model.Id" class="invisible" />
                 <div class="form-group row">
                     <label for="refNumber" class="col-4">Reference number</label>
                     <InputText @bind-Value="Model.RefNumber" class="form-control col-8" id="refNumber" />
@@ -97,15 +97,6 @@
 
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
                 <div class="form-group row">
                     <label for="land" class="col-4 ">Land</label>
                     <InputSelect @bind-Value="Model.Land" class="form-control col-8" id="land">
@@ -116,6 +107,16 @@
                         }
                     </InputSelect>
                     <ValidationMessage For="@(()=>Model.Land)" />
+                </div>
+                <div>
+                    <button class="btn btn-block btn-outline-primary" type="button" @onclick="@(()=>ShowUploadModule=!ShowUploadModule)">Upload photo</button>
+                    @if (ShowUploadModule)
+                    {
+                        <div>
+                            <FileInput OnPhotoSaved="GetPhotoPath"></FileInput>
+                        </div>
+                    }
+
                 </div>
                 <button class="btn btn-block btn-outline-primary">Save</button>
             </EditForm>

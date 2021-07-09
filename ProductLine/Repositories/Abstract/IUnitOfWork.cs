@@ -10,5 +10,6 @@ namespace ProductLine.Repositories
     {
         public IProductRepository ProductRepo { get; }
         public ICategoryRepository CategoryRepo { get; }
+        public IPhotoRepository PhotoRepo { get; }
     }
 }
