@@ -19,6 +19,8 @@ namespace ProductLine.Pages
         public IProductRepository ProductRepository { get; set; }
         [Inject]
         public NavigationManager NavigationManager { get; set; }
+        public bool ShowUploadModule { get; set; }
+        public string NewPhotoPath { get; set; }
         protected override void OnInitialized()
         {
             Categories = CategoryRepository.GetAll().ToList();
@@ -36,6 +38,11 @@ namespace ProductLine.Pages
 
         }
 
+        protected void GetPhotoPath(string newPath)
+        {
+            NewPhotoPath = newPath;
+        }
+        
         private Product MapModelToProduct(ProductCreateModel model)
         {
             var product = new Product();
@@ -49,7 +56,7 @@ namespace ProductLine.Pages
             product.Target = model.Target.ToString();
             product.Land = model.Land;
             product.Market = model.Market;
-            product.Photos = new List<Photo>() { new Photo() { Url="part.jpg" } };
+            product.Photos = new List<Photo>() { new Photo() { Url= NewPhotoPath==null? "part.jpg": NewPhotoPath } };
             return product;
         }
     }

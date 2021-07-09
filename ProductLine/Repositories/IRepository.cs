@@ -12,5 +12,6 @@ namespace ProductLine.Repositories
         T Add(T entity);
         bool Delete(int id);
         T Update(T entity);
+        bool SaveChanges();
     }
 }

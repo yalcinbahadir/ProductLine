@@ -37,6 +37,11 @@ namespace ProductLine.Repositories.Concrete
             return _context.Categories.FirstOrDefault(c=>c.Id==id);
         }
 
+        public bool SaveChanges()
+        {
+            return _context.SaveChanges() > 0;
+        }
+
         public Category Update(Category entity)
         {
             throw new NotImplementedException();

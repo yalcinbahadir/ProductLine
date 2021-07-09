@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 //https://www.youtube.com/watch?v=7OudZqyeHxg
 namespace ProductLine.Services
 {
+    //C:\Users\11902098\Desktop\GitHubSources\ProductLine\ProductLine\wwwroot\images\
     public class FileUpload : IFileUpload
     {
         private readonly IWebHostEnvironment _environment;
@@ -21,7 +22,7 @@ namespace ProductLine.Services
         public async Task UploadAsync(IFileListEntry file)
         {
             //Where to upload
-            var path = Path.Combine(_environment.ContentRootPath,"Upload", file.Name);
+            var path = Path.Combine(_environment.ContentRootPath,"wwwroot","images",file.Name);
             var ms = new MemoryStream();
             await file.Data.CopyToAsync(ms);
             using (FileStream stream=new FileStream(path, FileMode.Create, FileAccess.Write))

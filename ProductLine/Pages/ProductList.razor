@@ -42,6 +42,7 @@ else
                 <td>@product.AssemblyNr</td>
                 <td>@product.Category.CategoryName</td>
                 <td> <a href="@($"productdetails/{product.Id}")">Details</a></td>
+                <td> <a href="@($"productedit/{product.Id}")"><span class="oi oi-pencil"></span></a></td>
             </tr>
             }
         </tbody>

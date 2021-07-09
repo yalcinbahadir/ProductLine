@@ -9,5 +9,6 @@ namespace ProductLine.Repositories
     public interface IUnitOfWork
     {
         public IProductRepository ProductRepo { get; }
+        public ICategoryRepository CategoryRepo { get; }
     }
 }

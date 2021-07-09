@@ -1,9 +1,6 @@
 ﻿@page "/fileinput"
 @using ProductLine.Services
 @inject IFileUpload FileUpload
-<h3>File Input</h3>
-<hr />
-
 <div class="input-group">
     <div class="custom-file"> 
     <InputFile class="custom-file-input" OnChange="HandelFileSelected" 
@@ -13,17 +10,20 @@
     <label class="custom-file-label" for="inputfile">Choose file</label>
     </div>
 </div>
+<div>
+    @if (file != null)
+    {
+        <p>Name :@file.Name</p>
+        <p>Size in bytes :@file.Size</p>
+        <p>File type :@file.Type</p>
+    }
+</div>
 
 
-
-@if (file != null)
-{
-    <p>Name :@file.Name</p>
-    <p>Size in bytes :@file.Size</p>
-    <p>File type :@file.Type</p>
-}
 
 @code {
+    [Parameter]
+    public EventCallback<string> OnPhotoSaved { get; set; }
     IFileListEntry file;
     async Task HandelFileSelected(IFileListEntry[] files)
     {
@@ -31,6 +31,7 @@
         if (file != null)
         {
             await FileUpload.UploadAsync(file);
+            await OnPhotoSaved.InvokeAsync(file.Name);
         }
     }
 }

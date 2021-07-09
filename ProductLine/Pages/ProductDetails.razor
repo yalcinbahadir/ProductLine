@@ -1,27 +1,35 @@
 ﻿@page "/productdetails/{id}"
 @inherits ProductDetailsBase
-<div class="card" style="width: 72rem;">
-  
-    
-    <div class="card-header d-flex justify-content-center p-2"><img src="images/@photoPath" class="card-img-top mainPhoto border-2" alt="..."></div>
-    <div class="card-body">      
-        <div><span class="detailsForm">Id :</span><span>@Product.Id</span></div>
-        <div><span class="detailsForm">RefNumber :</span><span>@Product.RefNumber</span></div>
-        <div><span class="detailsForm">Name :</span><span>@Product.Name</span></div>
-        <div><span class="detailsForm">CretaedAt :</span><span>@Product.CretaedAt</span></div>
-        <div><span class="detailsForm">AssemblyNr :</span><span>@Product.AssemblyNr</span></div>
-        <div><span class="detailsForm">Description :</span><span>@Product.Description</span></div>
-        <div><span class="detailsForm">Category :</span><span>@Product.Category.CategoryName</span></div>
-        <button class="btn btn-primary" @onclick="ShowProductList">See productlist</button>
-    </div>
-    <div class="card-footer row">
-      
-        @foreach (var photo in Product.Photos.ToList())
-        {
-        <div >
-            <img src="images/@photo.Url" alt="Alternate Text" class="smallPhoto m-2" @onmouseover="e=>ChangeMainPhoto(photo.Url)" />
+    <div class="container">
+        <div class="card" style="width: 72rem;">
+
+
+            <div class="card-header d-flex justify-content-center p-2"><img src="images/@photoPath" class="card-img-top mainPhoto border-2" alt="..."></div>
+            <div class="card-body">
+                <div><span class="detailsForm">Id :</span><span>@Product.Id</span></div>
+                <div><span class="detailsForm">RefNumber :</span><span>@Product.RefNumber</span></div>
+                <div><span class="detailsForm">Name :</span><span>@Product.Name</span></div>
+                <div><span class="detailsForm">CretaedAt :</span><span>@Product.CretaedAt.ToLongDateString()</span></div>
+                <div><span class="detailsForm">AssemblyNr :</span><span>@Product.AssemblyNr</span></div>
+                <div><span class="detailsForm">Description :</span><span>@Product.Description</span></div>
+                <div><span class="detailsForm">Category :</span><span>@Product.Category.CategoryName</span></div>
+                <div><span class="detailsForm">IsChecked :</span><span>@Product.IsControlled</span></div>
+                <div><span class="detailsForm">Target :</span><span>@Product.Target</span></div>
+                <div><span class="detailsForm">Market :</span><span>@Product.Market</span></div>
+                <div><span class="detailsForm">Land :</span><span>@Product.Land</span></div>
+                <hr />
+                <button class="btn btn-primary" @onclick="ShowProductList">See productlist</button>
+                <a class="btn btn-primary" href="@($"productEdit/{Product.Id}")">Edit</a>
+            </div>
+            <div class="card-footer row">
+
+                @foreach (var photo in Product.Photos.ToList())
+                {
+                    <div>
+                        <img src="images/@photo.Url" alt="Alternate Text" class="smallPhoto m-2" @onmouseover="e=>ChangeMainPhoto(photo.Url)" />
+                    </div>
+                }
+            </div>
         </div>
-        }
     </div>
-</div>
 

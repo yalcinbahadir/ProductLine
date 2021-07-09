@@ -90,5 +90,9 @@ namespace ProductLine.Repositories.Concrete
             return query.Where(p => p.Description.ToUpper().Contains(description.ToUpper()));
         }
 
+        public bool SaveChanges()
+        {
+            return _context.SaveChanges() > 0;
+        }
     }
 }
