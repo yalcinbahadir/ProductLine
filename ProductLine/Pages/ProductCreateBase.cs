@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using ProductLine.Entities;
 using ProductLine.Models;
+using ProductLine.Repositories;
 using ProductLine.Repositories.Abstract;
 using System;
 using System.Collections.Generic;
@@ -18,13 +19,14 @@ namespace ProductLine.Pages
         [Inject]
         public IProductRepository ProductRepository { get; set; }
         [Inject]
+        public IUnitOfWork UnitOfWork { get; set; }
+        [Inject]
         public NavigationManager NavigationManager { get; set; }
         public bool ShowUploadModule { get; set; }
         public string NewPhotoPath { get; set; }
         protected override void OnInitialized()
-        {
-            Categories = CategoryRepository.GetAll().ToList();
-            
+        {          
+            Categories = UnitOfWork.CategoryRepo.GetAll().ToList();
         }
 
         protected void HandelValidSubmit()
@@ -32,7 +34,8 @@ namespace ProductLine.Pages
             var product=MapModelToProduct(Model);
             if (product != null)
             {
-                ProductRepository.Add(product);
+
+                UnitOfWork.ProductRepo.Add(product);
                 NavigationManager.NavigateTo("/productlist");
             }
 

@@ -22,6 +22,7 @@ namespace ProductLine.Pages
         public NavigationManager NavigationManager { get; set; }
 
         public bool ShowUploadModule { get; set; }
+        public bool ShowDeleteIcon { get; set; } = false;
         public string NewPhotoPath { get; set; }
 
         protected override void OnInitialized()
