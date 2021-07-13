@@ -41,8 +41,9 @@ else
                 <td>@product.Description</td>
                 <td>@product.AssemblyNr</td>
                 <td>@product.Category.CategoryName</td>
-                <td> <a href="@($"productdetails/{product.Id}")">Details</a></td>
+                <td> <a href="@($"productdetails/{product.Id}")"><span class="oi oi-document"></span></a></td>
                 <td> <a href="@($"productedit/{product.Id}")"><span class="oi oi-pencil"></span></a></td>
+                <td> <a @onclick="e=>ConfirmDelete(product.Id)"><span class="oi oi-delete"></span></a></td>
             </tr>
             }
         </tbody>

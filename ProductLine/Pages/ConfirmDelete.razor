@@ -1,0 +1,41 @@
+﻿@page "/confirmdelete/{id}"
+@inherits ConfirmDeleteBase
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="card">               
+                <div class="card-body">
+                    <div><span class="detailsForm">Id :</span><span>@Product.Id</span></div>
+                    <div><span class="detailsForm">RefNumber :</span><span>@Product.RefNumber</span></div>
+                    <div><span class="detailsForm">Name :</span><span>@Product.Name</span></div>
+                    <div><span class="detailsForm">CretaedAt :</span><span>@Product.CretaedAt.ToLongDateString()</span></div>
+                    <div><span class="detailsForm">AssemblyNr :</span><span>@Product.AssemblyNr</span></div>
+                    <div><span class="detailsForm">Description :</span><span>@Product.Description</span></div>
+                    <div><span class="detailsForm">Category :</span><span>@Product.Category.CategoryName</span></div>
+                    <div><span class="detailsForm">IsChecked :</span><span>@Product.IsControlled</span></div>
+                    <div><span class="detailsForm">Target :</span><span>@Product.Target</span></div>
+                    <div><span class="detailsForm">Market :</span><span>@Product.Market</span></div>
+                    <div><span class="detailsForm">Land :</span><span>@Product.Land</span></div>
+                </div>
+             
+            </div>
+        </div>
+        <div class="col-6 card-header ">
+            <div class="text-center p-2"><img src="images/@photoPath" class="card-img-top mainPhoto_Delete border-2" alt="..."></div>
+            <div class="row d-flex justify-content-between">
+
+                @foreach (var photo in Product.Photos.ToList())
+                {
+                    <div>
+                        <img src="images/@photo.Url" alt="Alternate Text" class="smallerPhoto m-2" @onmouseover="e=>ChangeMainPhoto(photo.Url)" />
+                    </div>
+                }
+            </div>
+        </div>    
+        <div class="row mt-2 pl-4">
+            <button class="btn btn-primary" @onclick="CancelDelete"> Cancel</button>  <button class="btn btn-danger ml-3" @onclick="ConfirmDelete"> Confirm</button>
+        </div>
+    </div>
+</div>
+

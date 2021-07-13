@@ -24,6 +24,8 @@ namespace ProductLine.Pages
         public IUnitOfWork UnitOfWork { get; set; }
         [Inject]
         public IModalService ModalService { get; set; }
+        [Inject]
+        public NavigationManager NavigationManager { get; set; }
 
         protected bool isOrderedByRefNumber = false;
         protected bool isOrderedByName = false;
@@ -188,7 +190,15 @@ namespace ProductLine.Pages
         }
 
         #endregion
-     
+
+
+        protected void ConfirmDelete(int id)
+        {
+            ModalParameters parameters = new ModalParameters();
+            parameters.Add("Id",id.ToString());
+            ModalService.Show<ConfirmDelete>("ConfirmDelete", parameters);
+        }
+
 
         protected void ShowInModal()
         {

@@ -28,7 +28,7 @@ namespace ProductLine.Repositories.Concrete
         public bool Delete(int id)
         {
             var product = _context.Products.FirstOrDefault(p=>p.Id==id);
-            if (product ==null)
+            if (product !=null)
             {
                  _context.Products.Remove(product);               
             }

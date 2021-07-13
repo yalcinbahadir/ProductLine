@@ -25,7 +25,7 @@
     padding: 3px;
     font-weight: bold;
     display: inline-block;
-    background-color:red;
+   
 }
 
 .mainPhoto{
@@ -34,9 +34,21 @@
     border:solid 3px black;
 }
 
+.mainPhoto_Delete {
+    width: 100%;
+    height: 16rem;
+    border: solid 3px black;
+}
+
 .smallPhoto {
     width: 8rem;
     height: 6rem;
+    border: solid 1px black;
+}
+
+.smallerPhoto {
+    width: 4rem;
+    height: 3rem;
     border: solid 1px black;
 }
 
