@@ -23,7 +23,7 @@
         </div>
         <div class="col-6 card-header ">
             <div class="text-center p-2"><img src="images/@photoPath" class="card-img-top mainPhoto_Delete border-2" alt="..."></div>
-            <div class="row d-flex justify-content-between">
+            @*<div class="row d-flex justify-content-between">
 
                 @foreach (var photo in Product.Photos.ToList())
                 {
@@ -31,7 +31,7 @@
                         <img src="images/@photo.Url" alt="Alternate Text" class="smallerPhoto m-2" @onmouseover="e=>ChangeMainPhoto(photo.Url)" />
                     </div>
                 }
-            </div>
+            </div>*@
         </div>    
         <div class="row mt-2 pl-4">
             <button class="btn btn-primary" @onclick="CancelDelete"> Cancel</button>  <button class="btn btn-danger ml-3" @onclick="ConfirmDelete"> Confirm</button>

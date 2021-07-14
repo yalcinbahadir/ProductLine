@@ -1,0 +1,38 @@
+﻿@page "/login"
+@using Microsoft.AspNetCore.Components.Forms;
+@using System.Security.Claims;
+<h3>Login Page</h3>
+<EditForm Model="@User" OnValidSubmit="ValidateUser">
+    <div class="form-group">
+        <label>Email</label>
+        <InputText @bind-Value="User.Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <InputText @bind-Value="User.Password" class="form-control" />
+    </div>
+    <button class="btn btn-primary">Login</button>
+</EditForm>
+
+@code {
+
+    public User User { get; set; } = new User();
+    [Inject]
+    public AuthenticationStateProvider AuthenticationStateProvider { get; set; }
+    [Inject]
+    public ISessionStorageService SessionStorage { get; set; }
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+
+    private async Task<bool> ValidateUser()
+    {
+        //Assume that user is valid
+        await SessionStorage.SetItemAsync("emailAddress", User.Email);
+        (AuthenticationStateProvider as CustomAuthenticationStateProvider).MarkUserAsAuthenticated(User.Email);
+        NavigationManager.NavigateTo("/");
+        return await Task.FromResult(true);
+    }
+
+
+
+}
