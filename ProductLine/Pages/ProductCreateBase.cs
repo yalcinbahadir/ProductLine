@@ -24,9 +24,17 @@ namespace ProductLine.Pages
         public NavigationManager NavigationManager { get; set; }
         public bool ShowUploadModule { get; set; }
         public string NewPhotoPath { get; set; }
+        protected ElementReference ProductReferenceInput;
         protected override void OnInitialized()
         {          
             Categories = UnitOfWork.CategoryRepo.GetAll().ToList();
+            
+        }
+
+        protected async override Task OnAfterRenderAsync(bool firstRender)
+        {
+            await ProductReferenceInput.FocusAsync();          
+            //return base.OnInitializedAsync();
         }
 
         protected void HandelValidSubmit()
@@ -34,7 +42,6 @@ namespace ProductLine.Pages
             var product=MapModelToProduct(Model);
             if (product != null)
             {
-
                 UnitOfWork.ProductRepo.Add(product);
                 NavigationManager.NavigateTo("/productlist");
             }
