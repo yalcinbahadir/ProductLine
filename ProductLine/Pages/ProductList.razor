@@ -10,7 +10,7 @@ else
 {
 <div class="card-header">
     <a href="productcreate" class="btn btn-outline-primary m-2">Create a new product</a>
-    <button class="btn btn-outline-primary m-2" @onclick="CreateViaModal">Create a new product via modal</button>
+    <button class="btn btn-primary m-2" @onclick="CreateViaModal">Create a new product via modal</button>
 </div>
     <table class="table">
         <thead>
@@ -23,11 +23,11 @@ else
                 <th scope="col"><input type="text" placeholder="Search by Category" class="form-control" @oninput="SearchByCategory"  /></th>
             </tr>
             <tr>
-                <th scope="col">RefNumber <span class="oi oi-sort-ascending" @onclick="OrderByRefNumber"></span></th>
+                <th scope="col">Reference Number <span class="oi oi-sort-ascending" @onclick="OrderByRefNumber"></span></th>
                 <th scope="col">Name <span class="oi oi-sort-ascending" @onclick="OrderByName"></span></th>
-                <th scope="col">CretaedAt <span class="oi oi-sort-ascending"></span></th>
+                <th scope="col">Cretaed At <span class="oi oi-sort-ascending"></span></th>
                 <th scope="col">Description <span class="oi oi-sort-ascending"></span></th>
-                <th scope="col">AssemblyNr <span class="oi oi-sort-ascending" @onclick="OrderByAssemblyNr"></span></th>
+                <th scope="col">Assembly Nu <span class="oi oi-sort-ascending" @onclick="OrderByAssemblyNr"></span></th>
                 <th scope="col">Category <span class="oi oi-sort-ascending" @onclick="OrderByCategory"></span></th>
 
             </tr>
